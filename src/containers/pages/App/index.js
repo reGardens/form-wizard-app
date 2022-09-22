@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, Link, useRoutes } from "react-router-dom";
+import Registrasi from "../../Registrasi";
 
 // // style
 // import "./style.scss";
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="registrasi" element={<Registrasi />} />
       </Routes>
     </div>
   );

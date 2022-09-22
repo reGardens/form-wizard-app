@@ -31,10 +31,8 @@ function Dashboard() {
     kec: "",
     kel: "",
   });
-  const [disableBtn, setDisableBtn] = useState(false);
+  //   const [disableBtn, setDisableBtn] = useState(false);
   const [button, setButton] = useState("Simpan");
-
-  // console.log(dataAll);
 
   useEffect(() => {
     dispatch(getDataProvinsi());
@@ -65,6 +63,8 @@ function Dashboard() {
     });
   };
 
+  //   let dataSave = document.querySelector('.')
+
   // handle simpan ke localStorage
   const handleSubmit = () => {
     if (button == "Simpan") {
@@ -79,13 +79,13 @@ function Dashboard() {
       //   setDisableBtn(true);
       setButton("Next");
     } else if (button == "Next") {
-      navigate("/");
+      navigate("/registrasi");
     }
   };
 
   return (
     <div className="App">
-      <p>Wizard 1</p>
+      <p className="title">Register Form</p>
       <div className="container">
         <div className="wrapper">
           <div className="listData">
@@ -202,7 +202,8 @@ function Dashboard() {
                     })
                   : null}
               </select>
-              {/* </label> */}
+
+              {/* handle Button */}
               <div className="btn">
                 <button onClick={null}>Hapus</button>
                 <button onClick={handleSubmit}>{button}</button>
