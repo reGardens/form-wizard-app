@@ -71,7 +71,7 @@ Aplikasi Wizard Form
  ┣ 📜index.js
  ┣ 📜logo.svg
  ┣ 📜reportWebVitals.js
- ┗ 📜setupTests.js
+ ┗ 📜setupTests.jss
  
  ## Instalation
  - Download Zip
